@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalMart Supermarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            🛒 GlobalMart
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="cart">
+            🛒 Cart <span id="cartCount">0</span>
+        </div>
+
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            Welcome to GlobalMart
+        </p>
+
+        <h1>
+            Fresh Products<br>
+            For Your Family
+        </h1>
+
+        <p>
+            Quality groceries, fresh vegetables,
+            fruits and daily essentials at the
+            best prices.
+        </p>
+
+        <a href="#products" class="btn">
+            Shop Now
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        🛍️
+    </div>
+
+</section>
+
+<section class="categories">
+
+    <h2>Shop By Category</h2>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <div class="category-icon">🥦</div>
+            <h3>Vegetables</h3>
+            <p>Fresh vegetables</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🍎</div>
+            <h3>Fruits</h3>
+            <p>Fresh & healthy fruits</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🥛</div>
+            <h3>Dairy</h3>
+            <p>Milk & dairy products</p>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🍪</div>
+            <h3>Snacks</h3>
+            <p>Tasty snacks</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="about-image">
+        🏪
+    </div>
+
+    <div class="about-content">
+
+        <p class="small-title">
+            About Us
+        </p>
+
+        <h2>
+            Your Trusted Local Supermarket
+        </h2>
+
+        <p>
+            GlobalMart provides fresh and quality
+            groceries for your everyday needs.
+            We focus on quality, affordability
+            and excellent customer service.
+        </p>
+
+        <div class="features">
+            <div>✅ Fresh Products</div>
+            <div>✅ Best Prices</div>
+            <div>✅ Quality Guaranteed</div>
+            <div>✅ Friendly Service</div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products" id="products">
+
+    <p class="small-title">
+        Our Products
+    </p>
+
+    <h2>
+        Popular Products
+    </h2>
+
+    <div class="product-container">
+
+        <div class="product-card"
+             data-name="Fresh Tomato"
+             data-price="40">
+
+            <div class="product-image">
+                🍅
+            </div>
+
+            <h3>Fresh Tomato</h3>
+            <p>1 Kg</p>
+
+            <div class="price">
+                ₹40
+            </div>
+
+            <button class="add-cart">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="product-card"
+             data-name="Fresh Apple"
+             data-price="120">
+
+            <div class="product-image">
+                🍎
+            </div>
+
+            <h3>Fresh Apple</h3>
+            <p>1 Kg</p>
+
+            <div class="price">
+                ₹120
+            </div>
+
+            <button class="add-cart">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="product-card"
+             data-name="Fresh Milk"
+             data-price="55">
+
+            <div class="product-image">
+                🥛
+            </div>
+
+            <h3>Fresh Milk</h3>
+            <p>1 Litre</p>
+
+            <div class="price">
+                ₹55
+            </div>
+
+            <button class="add-cart">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <div class="product-card"
+             data-name="Fresh Bread"
+             data-price="45">
+
+            <div class="product-image">
+                🍞
+            </div>
+
+            <h3>Fresh Bread</h3>
+            <p>500 g</p>
+
+            <div class="price">
+                ₹45
+            </div>
+
+            <button class="add-cart">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cart-section" id="cartSection">
+
+    <h2>🛒 Your Cart</h2>
+
+    <div id="cartItems">
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+    </div>
+
+    <div class="cart-total">
+
+        <h3>
+            Total: ₹<span id="cartTotal">0</span>
+        </h3>
+
+        <button id="checkoutBtn">
+            Checkout
+        </button>
+
+    </div>
+
+</section>
+
+<section class="offer" id="offers">
+
+    <div>
+
+        <p>Special Offer</p>
+
+        <h2>
+            Get 20% OFF
+        </h2>
+
+        <p>
+            On your first shopping order!
+        </p>
+
+        <button class="offer-btn">
+            Shop Now
+        </button>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <p class="small-title">
+        Contact Us
+    </p>
+
+    <h2>
+        Visit GlobalMart Today
+    </h2>
+
+    <div class="contact-container">
+
+        <div>
+            📍
+            <strong>Address</strong>
+            <p>Main Road, Tamil Nadu</p>
+        </div>
+
+        <div>
+            📞
+            <strong>Phone</strong>
+            <p>98765 43210</p>
+        </div>
+
+        <div>
+            ✉️
+            <strong>Email</strong>
+            <p>globalmart@gmail.com</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>🛒 GlobalMart Supermarket</h3>
+
+    <p>
+        Freshness you can trust.
+    </p>
+
+    <p>
+        © 2026 GlobalMart. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
